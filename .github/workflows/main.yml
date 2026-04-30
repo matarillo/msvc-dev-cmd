@@ -6,8 +6,6 @@ on:
     branches:
       - master
       - release/*
-  schedule:
-    - cron: '0 6 * * *'
 
 jobs:
   test:

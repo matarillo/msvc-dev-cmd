@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - release/*
-  schedule:
-    - cron: '0 6 * * *'
 
 jobs:
   test:
@@ -13,7 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Setup Developer Command Prompt
-        uses: ilammy/msvc-dev-cmd@release/v1
+        uses: matarillo/msvc-dev-cmd@master
       - name: Check out source code
         uses: actions/checkout@v4
       - name: Compile and run some C code
