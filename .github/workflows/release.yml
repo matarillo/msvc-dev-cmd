@@ -1,6 +1,7 @@
 name: msvc-dev-cmd (release)
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - release/*
